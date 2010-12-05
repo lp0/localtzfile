@@ -32,7 +32,7 @@ def create(file, longitude):
 
 	# tzh_timecnt (0)
 
-	# tzh_typecnt (0)
+	# tzh_typecnt (1)
 	file.write(struct.pack('>l', round(float(longitude)/360 * 86400)))
 	file.write(struct.pack('>b', 0))
 	file.write(struct.pack('>B', 0))
